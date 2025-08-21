@@ -11,6 +11,7 @@ print(data.dropna(inplace=True)) ## quando eu coloco o dropna ele vai retirar to
 ## o inplace=true ele mudar o dataframe original tirando todos valores non mas não vai fazer uma copia do anterior
 data.info()
 print("-------------------------------------")
+
 from sklearn.model_selection import train_test_split
 x = data.drop(['median_house_value'], axis=1)
 y = data['median_house_value']
